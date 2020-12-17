@@ -1,0 +1,18 @@
+server:
+  port: 7021
+  servlet:
+    context-path: /dubbo
+
+spring:
+  dubbo:
+    application:
+      name: rpc-clientName
+    protocol:
+      name: dubbo
+      port: 12346
+    consumer:
+      check: false
+    registry:
+      protocol: zookeeper
+      address: 172.16.13.100:2181
+      check: false
